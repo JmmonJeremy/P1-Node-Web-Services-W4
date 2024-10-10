@@ -62,7 +62,7 @@
         }
       },
       "post": {
-        "description": "Demo CREATE contact info:  _id: 66fe08c7b9dffdc00f411ba4  firstName: Lizzy,  lastName: Broderick,  email: lizzyb@gmail.com,  favoriteColor: Green,  birthday: 04/13/1975",
+        "description": "Demo CREATE contact info:  _id: 66fe08c7b9dffdc00f411ba4  firstName: Demo,  lastName: Fanny,  email: demo1@gmail.com@gmail.com,  favoriteColor: White,  birthday: 01/01/01",
         "parameters": [
           {
             "name": "body",
@@ -105,7 +105,7 @@
     "/contacts/{id}": {
       "get": {
         "summary": "Getting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements",
-        "description": "Demo SELECT 1 contact options:  Bryan's _id: 66f77d6c74ad0f43e4341169  Victoria's _id: 66f77d6c74ad0f43e434116a  Ammon's _id: 66f77d6c74ad0f43e434116b  Elizabeth's _id: 66fe08c7b9dffdc00f411ba4",
+        "description": "Demo SELECT 1 contact options:  Bryan's _id: 66f77d6c74ad0f43e4341169  Victoria's _id: 66f77d6c74ad0f43e434116a  Ammon's _id: 66f77d6c74ad0f43e434116b  Miriam's _id: 67083f1820e41367f6a90c05  Elizabeth's _id: 67083f1820e41367f6a90c06  Demon's _id: 66fe08c7b9dffdc00f411ba4",
         "parameters": [
           {
             "name": "id",
@@ -141,7 +141,7 @@
         }
       },
       "put": {
-        "description": "Demo UPDATE contact info:  _id: 66fe08c7b9dffdc00f411ba4  firstName: Elizabeth,  lastName: Suchanski,  email: tinlizzy1@gmail.com,  favoriteColor: Red,  birthday: 04/13/1975",
+        "description": "Demo UPDATE contact info:  _id: 66fe08c7b9dffdc00f411ba4  firstName: Demonstration,  lastName: Funny,  email: 1demo1@gmail.com,  favoriteColor: Rainbow,  birthday: 01/01/1001",
         "parameters": [
           {
             "name": "id",
@@ -188,7 +188,7 @@
       },
       "delete": {
         "summary": "Deleting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements",
-        "description": "Demo DELETE 1 contact:  Lizzy or Elizabeth's _id: 66fe08c7b9dffdc00f411ba4",
+        "description": "Demo DELETE 1 contact:  Demo or Demonstration's _id: 66fe08c7b9dffdc00f411ba4",
         "parameters": [
           {
             "name": "id",

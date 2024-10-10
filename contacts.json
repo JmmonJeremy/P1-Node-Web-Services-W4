@@ -19,5 +19,19 @@
     "email": "ammonsuch@gmail.com",
     "favoriteColor": "Green",
     "birthday": "11/10/98"
+  },
+  {
+    "firstName": "Miriam",
+    "lastName": "Suchanski",
+    "email": "msuchans@gmail.com",
+    "favoriteColor": "Pink",
+    "birthday": "04/17/20"
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Suchanski",
+    "email": "tinlizzy1@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "04/13/75"
   }
 ]

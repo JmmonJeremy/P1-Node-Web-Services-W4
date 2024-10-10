@@ -69,7 +69,9 @@ const getSpecificContact = async (req, res) => {
     Bryan's _id:      66f77d6c74ad0f43e4341169
     Victoria's _id:   66f77d6c74ad0f43e434116a
     Ammon's _id:      66f77d6c74ad0f43e434116b
-    Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
+    Miriam's _id:     67083f1820e41367f6a90c05
+    Elizabeth's _id:  67083f1820e41367f6a90c06
+    Demon's _id:  66fe08c7b9dffdc00f411ba4"
     #swagger.summary = "Getting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements"
     #swagger.responses[200] = { 
       description: "OK", 
@@ -135,11 +137,11 @@ const createContact = async (req, res) => {
   /*
     #swagger.description = 'Demo CREATE contact info:
     _id:            66fe08c7b9dffdc00f411ba4
-    firstName:      Lizzy,
-    lastName:       Broderick,
-    email:          lizzyb@gmail.com,
-    favoriteColor:  Green,
-    birthday:       04/13/1975'
+    firstName:      Demo,
+    lastName:       Fanny,
+    email:          demo1@gmail.com@gmail.com,
+    favoriteColor:  White,
+    birthday:       01/01/01'
   */
   try {
     // Log the request body to check if it's being parsed
@@ -174,11 +176,11 @@ const updateContact = async (req, res) => {
   /*
     #swagger.description = 'Demo UPDATE contact info:
     _id:            66fe08c7b9dffdc00f411ba4
-    firstName:      Elizabeth,
-    lastName:       Suchanski,
-    email:          tinlizzy1@gmail.com,
-    favoriteColor:  Red,
-    birthday:       04/13/1975'
+    firstName:      Demonstration,
+    lastName:       Funny,
+    email:          1demo1@gmail.com,
+    favoriteColor:  Rainbow,
+    birthday:       01/01/1001'
   */
   try {
     // Create a variable to hold the object of the contact id
@@ -230,7 +232,7 @@ const updateContact = async (req, res) => {
 const removeContact = async (req, res) => {
   /*
     #swagger.description = "Demo DELETE 1 contact:
-    Lizzy or Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
+    Demo or Demonstration's _id:  66fe08c7b9dffdc00f411ba4"
     #swagger.summary = "Deleting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements"
     #swagger.responses[200] = { 
         description: "OK", 

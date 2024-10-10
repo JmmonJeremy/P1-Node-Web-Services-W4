@@ -3,7 +3,9 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../swagger.json');
 
 router.use('/api-docs', swaggerUi.serve);
-router.get('/api-docs', (req, res) => {
+
+// Route to render the Swagger UI documentation
+router.get('/api-docs', (req, res, next) => {
   /*
     #swagger.description = "This is the Swagger API Documentation UI Page"    
     #swagger.summary = "Swagger API Documentation UI Page with added schema to meet mastery API DOCUMENTATION requirements"
@@ -15,14 +17,13 @@ router.get('/api-docs', (req, res) => {
               "successNotification": {
                 "type": "string",
                 "example": "You have successfully loaded the Swagger API Documentation UI Page!"
-                } 
               } 
             } 
           } 
         }    
    */
-  res.json('You have successfully loaded the Swagger API Documentation UI Page!');
-  swaggerUi.setup(swaggerDocument);
+  // Setup Swagger UI with the provided swaggerDocument
+  swaggerUi.setup(swaggerDocument)(req, res, next);
 });
 
 module.exports = router;
