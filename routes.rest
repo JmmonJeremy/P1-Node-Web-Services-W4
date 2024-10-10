@@ -73,11 +73,11 @@ Content-Type: application/json
 
 {
   "_id": "66fe08c7b9dffdc00f411ba4",
-  "firstName": "Elizabeth",
-  "lastName": "Suchanski",
-  "email": "tinlizzy1@gmail.com",
-  "favoriteColor": "Red",
-  "birthday": "04/13/1975"
+  "firstName": "Demo",
+  "lastName": "Fanny",
+  "email": "demo1@gmail.com",
+  "favoriteColor": "White",
+  "birthday": "01/01/01"
 }
 // ALTERING A CONTACT WITH PUT
 ###
@@ -85,11 +85,11 @@ PUT https://p1-node-web-services-w4.onrender.com/contacts/66fe08c7b9dffdc00f411b
 Content-Type: application/json
 
 {
-  "firstName": "Lizzy",
-  "lastName": "Suchanski",
-  "email": "tinlizzy1@gmail.com",
-  "favoriteColor": "Red",
-  "birthday": "04/13/1975"
+  "firstName": "Demonstration",
+  "lastName": "Funny",
+  "email": "1demo1@gmail.com",
+  "favoriteColor": "Rainbow",
+  "birthday": "01/01/1001"
 }
 ###
 // REMOVING A CONTACT WITH DELETE
