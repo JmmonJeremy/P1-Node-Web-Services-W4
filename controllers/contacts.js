@@ -139,7 +139,7 @@ const createContact = async (req, res) => {
     _id:            66fe08c7b9dffdc00f411ba4
     firstName:      Demo,
     lastName:       Fanny,
-    email:          demo1@gmail.com@gmail.com,
+    email:          demo1@gmail.com,
     favoriteColor:  White,
     birthday:       01/01/01'
   */
