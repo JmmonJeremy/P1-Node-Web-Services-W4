@@ -70,6 +70,32 @@ const getSpecificContact = async (req, res) => {
     Victoria's _id:   66f77d6c74ad0f43e434116a
     Ammon's _id:      66f77d6c74ad0f43e434116b
     Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
+    #swagger.summary = "Getting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements"
+    #swagger.responses[200] = { 
+      description: "OK", 
+      '@schema': { 
+            "type": "object",
+            "properties": {
+              "firstName": {
+                "example": "any"
+              },
+              "lastName": {
+                "example": "any"
+              },
+              "email": {
+                "example": "any"
+              },
+              "favoriteColor": {
+                "example": "any"
+              },
+              "birthday": {
+                "example": "any"
+              }
+              } 
+            } 
+          } 
+        } 
+      }  
   */
   try {
     // Create a variable to hold the object of the contact id

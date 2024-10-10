@@ -96,10 +96,8 @@
     },
     "/contacts/{id}": {
       "get": {
+        "summary": "Getting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements",
         "description": "Demo SELECT 1 contact options:  Bryan's _id: 66f77d6c74ad0f43e4341169  Victoria's _id: 66f77d6c74ad0f43e434116a  Ammon's _id: 66f77d6c74ad0f43e434116b  Elizabeth's _id: 66fe08c7b9dffdc00f411ba4",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -110,13 +108,27 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
+              }
+            }
           }
         }
       },
