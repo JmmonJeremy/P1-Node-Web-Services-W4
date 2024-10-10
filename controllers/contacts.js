@@ -36,6 +36,13 @@ const getAllContacts = async (req, res) => {
 
 // function to get 1 contact
 const getSpecificContact = async (req, res) => {
+  /*
+    #swagger.description = "Demo SELECT 1 contact options:
+    Bryan's _id:      66f77d6c74ad0f43e4341169
+    Victoria's _id:   66f77d6c74ad0f43e434116a
+    Ammon's _id:      66f77d6c74ad0f43e434116b
+    Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
+  */
   try {
     // Create a variable to hold the object of the contact id
     const contactId = new ObjectId(req.params.id.toString());
@@ -71,6 +78,15 @@ const getSpecificContact = async (req, res) => {
 
 // function to post or create a contact
 const createContact = async (req, res) => {
+  /*
+    #swagger.description = 'Demo CREATE contact info:
+    _id:            66fe08c7b9dffdc00f411ba4
+    firstName:      Lizzy,
+    lastName:       Broderick,
+    email:          lizzyb@gmail.com,
+    favoriteColor:  Green,
+    birthday:       04/13/1975'
+  */
   try {
     // Log the request body to check if it's being parsed
     console.log(`The following is prepped to be added:\n ${JSON.stringify(req.body, null, 2)}`);
@@ -99,8 +115,17 @@ const createContact = async (req, res) => {
   }
 };
 
-// function to post or create a contact
+// function to update a contact's info
 const updateContact = async (req, res) => {
+  /*
+    #swagger.description = 'Demo UPDATE contact info:
+    _id:            66fe08c7b9dffdc00f411ba4
+    firstName:      Elizabeth,
+    lastName:       Suchanski,
+    email:          tinlizzy1@gmail.com,
+    favoriteColor:  Red,
+    birthday:       04/13/1975'
+  */
   try {
     // Create a variable to hold the object of the contact id
     const contactId = new ObjectId(req.params.id.toString());
@@ -147,8 +172,12 @@ const updateContact = async (req, res) => {
   }
 };
 
-// function to post or create a contact
+// function to remove or delete a contact
 const removeContact = async (req, res) => {
+  /*
+    #swagger.description = "Demo DELETE 1 contact:
+    Lizzy or Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
+  */
   try {
     // Create a variable to hold the object of the contact id
     const contactId = new ObjectId(req.params.id.toString());
