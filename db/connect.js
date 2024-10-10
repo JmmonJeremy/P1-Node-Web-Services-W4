@@ -10,21 +10,18 @@ const initDb = (callback) => {
     return callback(null, _db);
   }
 
-  // Log the MongoDB URI
-  console.log('MongoDB URI:', process.env.MONGODB_URI);
-
   MongoClient.connect(process.env.MONGODB_URI)
     .then((client) => {
       _db = client;
       callback(null, _db);
-      // List all databases
+      // List the database being used
       _db
         .db()
         .admin()
         .listDatabases()
         .then((response) => {
           const databases = response.databases;
-          console.log('Databases from MongoClient connection:', databases);
+          console.log('Databases from MongoClient connection:', databases[0]);
         });
     })
     .catch((err) => {

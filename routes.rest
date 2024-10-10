@@ -1,4 +1,7 @@
 // LOCALHOST
+// getting the API docs from Swagger
+GET http://localhost:3000/api-docs
+### 
 // RETRIEVING CONTACTS WITH GET
 ###
 GET http://localhost:3000 HTTP/1.1
@@ -41,20 +44,23 @@ DELETE http://localhost:3000/contacts/66fe08c7b9dffdc00f411ba4 HTTP/1.1
 ###
 
 // PRODUCTION Deploy
+// getting the API docs from Swagger
+GET https://p1-node-web-services-w4.onrender.com/api-docs
+### 
 // RETRIEVING CONTACTS WITH GET
 ### 
-GET https://node-web-services-w3.onrender.com HTTP/1.1
+GET https://p1-node-web-services-w4.onrender.com HTTP/1.1
 ###
-GET https://node-web-services-w3.onrender.com/contacts
+GET https://p1-node-web-services-w4.onrender.com/contacts
 ###
-GET https://node-web-services-w3.onrender.com/contacts/66f77d6c74ad0f43e4341169
+GET https://p1-node-web-services-w4.onrender.com/contacts/66f77d6c74ad0f43e4341169
 ###
-GET https://node-web-services-w3.onrender.com/contacts/66f77d6c74ad0f43e434116a
+GET https://p1-node-web-services-w4.onrender.com/contacts/66f77d6c74ad0f43e434116a
 ###
-GET https://node-web-services-w3.onrender.com/contacts/66f77d6c74ad0f43e434116b
+GET https://p1-node-web-services-w4.onrender.com/contacts/66f77d6c74ad0f43e434116b
 // CREATING CONTACT WITH POST
 ### 
-POST https://node-web-services-w3.onrender.com/contacts/ HTTP/1.1 
+POST https://p1-node-web-services-w4.onrender.com/contacts/ 
 Content-Type: application/json
 
 {
@@ -67,7 +73,7 @@ Content-Type: application/json
 }
 // ALTERING A CONTACT WITH PUT
 ###
-PUT https://node-web-services-w3.onrender.com/contacts/66fe08c7b9dffdc00f411ba4 HTTP/1.1 
+PUT https://p1-node-web-services-w4.onrender.com/contacts/66fe08c7b9dffdc00f411ba4
 Content-Type: application/json
 
 {
@@ -79,5 +85,5 @@ Content-Type: application/json
 }
 ###
 // REMOVING A CONTACT WITH DELETE
-DELETE https://node-web-services-w3.onrender.com/contacts/66fe08c7b9dffdc00f411ba4 HTTP/1.1
+DELETE https://p1-node-web-services-w4.onrender.com/contacts/66fe08c7b9dffdc00f411ba4 HTTP/1.1
 ###

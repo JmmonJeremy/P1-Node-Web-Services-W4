@@ -76,12 +76,12 @@ const createContact = async (req, res) => {
     console.log(`The following is prepped to be added:\n ${JSON.stringify(req.body, null, 2)}`);
     // Create the contact to be created
     const contact = {
-      _id: new ObjectId(req.body._id),
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
       favoriteColor: req.body.favoriteColor,
-      birthday: req.body.birthday
+      birthday: req.body.birthday,
+      ...(req.body._id && { _id: new ObjectId(req.body._id) })
     };
     // Get the database object & report name
     const db = mongodb.getDb().db();
