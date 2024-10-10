@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "Bryan",
+    "lastName": "Suchanski",
+    "email": "bryan.d.suchanski@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "02/25/95"
+  },
+  {
+    "firstName": "Victoria",
+    "lastName": "Sorensen",
+    "email": "vsuchans@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "02/07/96"
+  },
+  {
+    "firstName": "Ammon",
+    "lastName": "Suchanski",
+    "email": "ammonsuch@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "11/10/98"
+  }
+]

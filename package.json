@@ -1,0 +1,38 @@
+{
+  "name": "web-services",
+  "version": "1.0.0",
+  "description": "Preperation for Web Services",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js",
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JmmonJeremy/Node-Web-Services-W3.git"
+  },
+  "author": "Jeremy Troy Suchanski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JmmonJeremy/Node-Web-Services-W3/issues"
+  },
+  "homepage": "https://github.com/JmmonJeremy/Node-Web-Services-W3#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.7",
+    "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bson": "^6.8.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  }
+}
