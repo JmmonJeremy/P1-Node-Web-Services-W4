@@ -13,20 +13,28 @@
   "paths": {
     "/": {
       "get": {
-        "description": "",
+        "summary": "Dislaying name for home CONTACTS page with added schema to meet mastery API DOCUMENTATION requirements",
+        "description": "Name of someone close to me (my 4 year old daughter)",
         "responses": {
           "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "successNotification": {
+                  "type": "string",
+                  "example": "Miriam Olivia Suchanski"
+                }
+              }
+            }
           }
         }
       }
     },
     "/contacts/": {
       "get": {
-        "description": "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements",
+        "summary": "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements",
+        "description": "",
         "responses": {
           "200": {
             "description": "OK",
@@ -179,6 +187,7 @@
         }
       },
       "delete": {
+        "summary": "Deleting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements",
         "description": "Demo DELETE 1 contact:  Lizzy or Elizabeth's _id: 66fe08c7b9dffdc00f411ba4",
         "parameters": [
           {
@@ -190,23 +199,36 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "successNotification": {
+                  "type": "string",
+                  "example": "The contact (name) with the id of (contactId) was successfully deleted from the contacts collection as requested."
+                }
+              }
+            }
           }
         }
       }
     },
     "/api-docs": {
       "get": {
-        "description": "",
+        "summary": "Swagger API Documentation UI Page with added schema to meet mastery API DOCUMENTATION requirements",
+        "description": "This is the Swagger API Documentation UI Page",
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "successNotification": {
+                  "type": "string",
+                  "example": "You have successfully loaded the Swagger API Documentation UI Page!"
+                }
+              }
+            }
           }
         }
       }

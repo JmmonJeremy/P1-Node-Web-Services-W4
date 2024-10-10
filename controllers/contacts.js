@@ -4,8 +4,8 @@ const { ObjectId } = require('bson');
 // fuction to return all contacts
 const getAllContacts = async (req, res) => {
   /*
-    #swagger.description = "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements"
-    /* #swagger.responses[200] = { 
+    #swagger.summary = "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements"
+    #swagger.responses[200] = { 
         description: "OK", 
         '@schema': { 
               "type": "object",
@@ -30,7 +30,7 @@ const getAllContacts = async (req, res) => {
             } 
           } 
         }    
-    */
+   */
   try {
     // Get the database object & report name
     const db = mongodb.getDb().db();
@@ -96,7 +96,7 @@ const getSpecificContact = async (req, res) => {
           } 
         } 
       }  
-  */
+   */
   try {
     // Create a variable to hold the object of the contact id
     const contactId = new ObjectId(req.params.id.toString());
@@ -231,7 +231,21 @@ const removeContact = async (req, res) => {
   /*
     #swagger.description = "Demo DELETE 1 contact:
     Lizzy or Elizabeth's _id:  66fe08c7b9dffdc00f411ba4"
-  */
+    #swagger.summary = "Deleting 1 CONTACT with added schema to meet mastery API DOCUMENTATION requirements"
+    #swagger.responses[200] = { 
+        description: "OK", 
+        '@schema': { 
+            "type": "object",
+            "properties": {
+              "successNotification": {
+                "type": "string",
+                "example": "The contact (name) with the id of (contactId) was successfully deleted from the contacts collection as requested."
+                } 
+              } 
+            } 
+          } 
+        }    
+   */
   try {
     // Create a variable to hold the object of the contact id
     const contactId = new ObjectId(req.params.id.toString());
