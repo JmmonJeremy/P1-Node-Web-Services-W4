@@ -3,6 +3,34 @@ const { ObjectId } = require('bson');
 
 // fuction to return all contacts
 const getAllContacts = async (req, res) => {
+  /*
+    #swagger.description = "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements"
+    /* #swagger.responses[200] = { 
+        description: "OK", 
+        '@schema': { 
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
+                } 
+              } 
+            } 
+          } 
+        }    
+    */
   try {
     // Get the database object & report name
     const db = mongodb.getDb().db();

@@ -26,19 +26,30 @@
     },
     "/contacts/": {
       "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "description": "Getting ALL CONTACTS with added schema to meet mastery API DOCUMENTATION requirements",
         "responses": {
           "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
+              }
+            }
           }
         }
       },
