@@ -4,5 +4,6 @@ const myController = require('../controllers');
 
 routes.get('/', myController.nameFunction);
 routes.use('/contacts', require('./contacts'));
+routes.use('/', './swagger');
 
 module.exports = routes;
