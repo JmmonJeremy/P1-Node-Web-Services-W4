@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JmmonJeremy/Node-Web-Services-W3.git"
+    "url": "git+https://github.com/JmmonJeremy/P1-Node-Web-Services-W4.git"
   },
   "author": "Jeremy Troy Suchanski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JmmonJeremy/Node-Web-Services-W3/issues"
+    "url": "https://github.com/JmmonJeremy/P1-Node-Web-Services-W4/issues"
   },
-  "homepage": "https://github.com/JmmonJeremy/Node-Web-Services-W3#readme",
+  "homepage": "https://github.com/JmmonJeremy/P1-Node-Web-Services-W4#readme",
   "devDependencies": {
     "cross-env": "^7.0.3",
     "eslint": "^8.10.0",
