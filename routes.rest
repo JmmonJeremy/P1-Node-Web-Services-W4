@@ -63,9 +63,9 @@ GET https://p1-node-web-services-w4.onrender.com/contacts/66f77d6c74ad0f43e43411
 ### Ammon
 GET https://p1-node-web-services-w4.onrender.com/contacts/66f77d6c74ad0f43e434116b
 ### Miriam
-GET http://p1-node-web-services-w4.onrender.com/contacts/67083f1820e41367f6a90c05
+GET https://p1-node-web-services-w4.onrender.com/contacts/67083f1820e41367f6a90c05
 ### Elizabeth
-GET http://p1-node-web-services-w4.onrender.com/contacts/67083f1820e41367f6a90c06
+GET https://p1-node-web-services-w4.onrender.com/contacts/67083f1820e41367f6a90c06
 // CREATING CONTACT WITH POST
 ### 
 POST https://p1-node-web-services-w4.onrender.com/contacts/ 
